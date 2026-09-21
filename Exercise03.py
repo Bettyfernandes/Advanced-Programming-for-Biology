@@ -1,15 +1,16 @@
-#-----------------------------------------------
-#             INCUBATION SUITABLE 
-#-----------------------------------------------
+#-------------------------------
+#    HOW MANY DAYS IN A YEAR? 
+#-------------------------------
 
-#INPUTS
+while True:   #porque usamos o while? 
+    year = int(input(" How many days in a year? Type 0 to stop executing the program." "\n"))   #não esquecer o int
+    if year == 0: 
+        break 
+    if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):    #nao existe !%? #não esquecer do == 0
+        print(366)
+    else: 
+        print(365)
 
-temperature=float(input("Temperature(C): "))
-humidity=float(input("Humidity(%): "))
 
-# Condictions 
-if (30 <= temperature <= 40) and (humidity >=40):
-    print("suitable") 
-else: 
-    print("not suitable")
+
 
